@@ -1,0 +1,623 @@
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p,
+footer, header, menu, nav, output,
+section{
+	margin: 0;
+	padding: 0;
+	color: #fafafa;
+	border: 0;
+	font: Helvetica sans-serif;
+	vertical-align: baseline;
+}
+/*Banner*/
+.Banner{
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: contain;
+}
+
+.Button{
+    display: flex;
+    flex-direction: row;
+    margin-left: 27%;
+    margin-top: 15%;
+}
+
+.Btns{
+    background-color: rgb(1, 54, 32);
+    font-weight: 200;
+    font-size: 20px;
+    color: whitesmoke;
+    line-height: 38px;
+    margin: 10px;
+    padding: 6px;
+    border-radius: 2px;
+   
+}
+
+.Header{
+    width: 50%;
+    transition: 2s;
+    line-height: 0%;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-stretch: condensed;
+    text-transform: uppercase;
+    margin-left: 35%;
+    margin-top: 300px;
+}
+
+.Paragraph{
+    width: 50%;
+    margin-left: 12%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 26px;
+    padding-top: 15px;
+}
+
+/*Nav*/
+nav{
+    width: 100%;
+    overflow: auto;
+}
+
+.Left{
+    float: left;
+    margin-left: 150px;
+}
+
+.Right{
+    float: right;
+    margin-right: 100px;
+}
+li{
+    display: inline-block;
+}
+.Left li a{
+    width: 100px;
+    display: block;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #fafafa;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 10px;
+}
+
+.Right li a{
+    color: #fafafa;
+    width: 50px;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background: #012e25;
+    border-radius: 10px;
+}
+.Left li a:hover, .Right li a:hover{
+    border-radius: 10px;
+}
+.fa-home, .fa-facebook, .fa-twitter, .fa-linkedin{
+    font-size: 20px;
+}
+
+
+
+
+/*media queries*/
+@media (min-width: 320px){
+    .Banner{
+        background-image: url("./Img/img0.jpg");
+        width: 100vw;
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 0%;
+        opacity: 0.95;
+    }
+
+    .Square{
+        background: linear-gradient(to top, #012e25, #181818);
+        opacity: 0.4;
+        border-radius: 30px 5px;
+        width: 80%;
+        height: 55%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10%;
+        position: absolute;
+        font-family: Arial, sans-serif;
+        line-height: 30px;
+        transition: 2s; 
+        font-size: 18px;
+    }
+
+    .Header-two{
+        display: none;
+    }
+
+    .Header{
+        width: 100%;
+        font-size: 19px;
+        display: flex;
+        justify-content: center;
+        transition: 2s;
+        padding: 6px;
+        margin-left: 2.5%;
+        line-height: 0%;
+        margin-top: 100px;
+        font-weight: 900;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-stretch: condensed;
+        text-transform: uppercase;
+        color: #f2f7f5; 
+    }
+
+    nav{
+        width: 100%;
+        overflow: auto;
+        font-size: 12px;
+    }
+    
+    .Left li a{
+        width: 100%;
+        font-size: 10px;
+        color: #eff3f1;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .Right li a{
+        display: none;
+    }
+    
+}
+
+
+@media (min-width: 480px){
+    .Banner{
+        background-image: url("./Img/img0.jpg");
+        width: 100vw;
+        height: 700px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 0%;
+        opacity: 0.95;
+    }
+
+    .Square{
+        background: linear-gradient(to top, #012e25, #181818);
+        opacity: 0.4;
+        border-radius: 30px 5px;
+        width: 70%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3%;
+        margin-left: 13.5%;
+        position: absolute;
+        font-family: Arial, sans-serif;
+        line-height: 30px;
+        padding-left: 1.9%;
+        transition: 2s; 
+        font-size: 22px;  
+    }
+
+    .Header-two{
+        display: none;
+    }
+
+    .Header{
+        width: 100%;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        transition: 2s;
+        padding: 10px;
+        margin-left: 2.5%;
+        line-height: 0%;
+        margin-top: 160px;
+        font-weight: 900;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-stretch: condensed;
+        text-transform: uppercase;
+        color: #7dd6ac; 
+    }
+
+    nav{
+        width: 100%;
+        overflow: auto;
+    }
+
+    .Left li a{
+        width: 100%;
+        font-size: 16px;
+        color: #eff3f1;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+        padding: 10px;
+    }
+    
+}
+
+
+@media (min-width: 602px){
+    .Banner{
+        background-image: url("./Img/img0.jpg");
+        width: 100vw;
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 0%;
+        opacity: 0.95;
+    }
+
+    .Square{
+        background: linear-gradient(to top, #012e25, #181818);
+        opacity: 0.4;
+        border-radius: 30px 5px;
+        width: 60%;
+        height: 55%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3%;
+        position: absolute;
+        font-family: Arial, sans-serif;
+        line-height: 30px;
+        transition: 2s; 
+        font-size: 22px;  
+    }
+
+    .Header-two{
+        display: none;
+    }
+
+    .Header{
+        width: 100%;
+        font-size: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 2s;
+        padding: 10px;
+        line-height: 0%;
+        margin-top: 130px;
+        font-weight: 900;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-stretch: condensed;
+        text-transform: uppercase;
+        color: #f1f5f3; 
+    }
+
+    nav{
+        width: 100%;
+        overflow: auto;
+    }
+
+    .Left li a{
+        width: 100%;
+        font-size: 16px;
+        color: #eff3f1;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+        padding: 12px;
+    }
+    .Right li a{
+        display: none;
+    }
+    
+}
+
+
+@media (min-width: 800px){
+    .Banner{
+        background-image: url("./Img/img0.jpg");
+        width: 100vw;
+        height: 800px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 0%;
+        opacity: 0.95;
+    }
+
+    .Square{
+        background: linear-gradient(to top, #012e25, #181818);
+        opacity: 0.4;
+        border-radius: 30px 5px;
+        width: 70%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3%;
+        margin-left: 13.5%;
+        position: absolute;
+        font-family: Arial, sans-serif;
+        line-height: 38px;
+        padding-left: 1.9%;
+        transition: 2s; 
+        font-size: 22px;  
+    }
+
+    .Header-two{
+        display: none;
+    }
+
+    .Header{
+        width: 100%;
+        font-size: 46px;
+        display: flex;
+        justify-content: center;
+        transition: 2s;
+        padding: 10px;
+        margin-left: 2.5%;
+        line-height: 0%;
+        margin-top: 160px;
+        font-weight: 900;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-stretch: condensed;
+        text-transform: uppercase;
+        color: #f1f5f3; 
+    }
+
+    nav{
+        width: 100%;
+        overflow: auto;
+    }
+
+    .Left li a{
+        width: 100%;
+        font-size: 16px;
+        color: #eff3f1;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+        padding: 10px;
+    }
+    .Right li a{
+        color: #fafafa;
+        width: 50px;
+        display: block;
+        padding: 8px;
+        margin-top: 1px;
+        text-align: center;
+        background: #012e25;
+        border-radius: 10px;
+    }
+    
+}
+
+
+
+@media (min-width: 1025px){
+    .Banner{
+        background-image: url("./Img/img0.jpg");
+        width: 100vw;
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 0%;
+        opacity: 0.95;
+    }
+
+    .Square{
+        background: linear-gradient(to top, #012e25, #181818);
+        opacity: 0.4;
+        border-radius: 30px 5px;
+        width: 50%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 13.5%;
+        position: absolute;
+        font-family: Arial, sans-serif;
+        line-height: 38px;
+        padding-left: 1.9%;
+        transition: 2s; 
+        font-size: 22px;  
+    }
+
+    .Header-two{
+        color: rgb(129, 12, 12);
+    }
+
+    .Header{
+        width: 100%;
+        font-size: 42px;
+        display: flex;
+        justify-content: center;
+        transition: 2s;
+        padding: 10px;
+        margin-left: -5%;
+        line-height: 0%;
+        margin-top: 100px;
+        font-weight: 900;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-stretch: condensed;
+        text-transform: uppercase;
+        color: #f1f5f3; 
+    }
+
+    nav{
+        width: 100%;
+        overflow: auto;
+    }
+
+    .Left li a{
+        width: 100%;
+        font-size: 18px;
+        color: #eff3f1;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+        padding: 10px;
+        margin-left: 15%;
+    }
+    .Right li a{
+        display: inline-block;
+    }
+    
+}
+
+
+
+@media (min-width: 1283px){
+    .Banner{
+        background-image: url("./Img/img0.jpg");
+        width: 100vw;
+        height: 900px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 0%;
+        opacity: 0.95;
+    }
+
+    .Square{
+        background: linear-gradient(to top, #012e25, #181818);
+        opacity: 0.4;
+        border-radius: 30px 5px;
+        width: 50%;
+        height: 47%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        margin-left: 13.5%;
+        position: absolute;
+        font-family: Arial, sans-serif;
+        line-height: 38px;
+        transition: 2s; 
+        font-size: 24px;
+        margin-left: 8%;  
+    }
+
+    .Header-two{   
+        margin-left: 72%;
+        margin-top: 3%;
+        color: #181818;
+        line-height: 0%;
+        font-weight: bolder;
+        font-size: 150px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-stretch:extra-expanded;
+        transition: none;
+        display: flex;
+        opacity: 0.5;
+    }
+
+    .Header{
+        width: 70%;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        transition: 2s;
+        padding: 10px;
+        margin-left: 2.5%;
+        line-height: 0%;
+        margin-top: 200px;
+        font-weight: 900;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-stretch: condensed;
+        text-transform: uppercase;
+        color: #f1f5f3; 
+    }
+
+    nav{
+        width: 100%;
+        overflow: auto;
+    }
+
+    .Left li a{
+        width: 100%;
+        font-size: 18px;
+        color: #eff3f1;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+        padding: 10px;
+        margin-left: 15%;
+    }
+    .Right li a{
+        display: inline-block;
+    }
+    
+}
+
+
+@media (max-width: 850px){
+    .Form{
+        grid-template-columns: 1fr;
+    }
+    .Contact-info:before{
+        bottom: initial;
+        top: -75px;
+        right: 65px;
+        transform: scale(0.95);
+    }
+    .Contact-form:before{
+        top: -13px;
+        left: initial;
+        right: 70px;
+    }
+    .big-circle{
+        bottom: 75%;
+        transform: scale(0.9) translate(-40% 30%);
+    }
+    .Text{
+        margin: 1rem 0 1.5rem 0;
+    }
+    .Social-media{
+        padding: 1.5rem 0 0 0;
+    }
+}
+@media (max-width: 480px){
+    .Container{
+        padding: 1.5rem;
+    }
+    .Contact-info{
+        display: none;
+    }
+    .big-circle, .small-circle{
+        display: none;
+    }
+    form, .Contact-info{
+        padding: 1.7rem 1.5rem;
+    }
+    .Text,
+    .Information,
+    .Social-media p{
+        font-size: 0.6rem;
+    }
+    .Title{
+        font-size: 1.15rem;
+    }
+    .Icons{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .Input{
+        padding: 0.45rem 1.2rem;
+    }
+    .Btn{
+        padding: 0.45rem 1.2rem;
+    }
+}
